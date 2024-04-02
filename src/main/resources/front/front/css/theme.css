@@ -1,0 +1,493 @@
+/*定义全局css*/
+body {
+	/* 1 全局公共主颜色 */
+	--publicMainColor: #f7c1c1;
+	/* 1 全局公共副颜色 */
+	--publicSubColor:  #8cd9b7;
+}
+.bodyClass{
+	background-image: linear-gradient(320deg,var(--publicMainColor),var(--publicSubColor));
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*开始==================================导航栏样式19=========================================开始*/
+    .homeHeight{
+        height: 92vh !important;
+    }
+    #iframe {
+        width: 100%;
+        margin-top: 70px;
+        padding-top: auto;
+    }
+    #header {
+        height: auto;
+        background: #fff;
+        border-bottom: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #header .nav-top {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 16px;
+        color: #2a8a15;
+        box-sizing: border-box;
+        height: 50px;
+        background: #f7f7f7;
+        box-shadow: 0 1px 6px rgba(0,0,0,.3);
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+    }
+
+    #header .nav-top-img {
+        width: 124px;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        border-radius: 6px;
+        border-width: 0;
+        border-style: solid;
+        border-color: rgba(0,0,0,.3);
+        box-shadow: 0 0 6px rgba(0,0,0,.3);
+    }
+
+    #header .nav-top-title {
+        line-height: 40px;
+        font-size: 16px;
+        color: #333;
+        padding: 0 10px;
+        margin: 0 10px;
+        border-radius: 6px;
+        border-width: 0;
+        border-style: solid;
+        border-color: rgba(0,0,0,.3);
+        background-color: rgba(0,0,0,0);
+        box-shadow: 0 0 6px rgba(0,0,0,.3);
+    }
+
+    #header .nav-top-tel {
+        line-height: 40px;
+        font-size: 16px;
+        color: #333;
+        padding: 0 10px;
+        margin: 0;
+        border-radius: 6px;
+        border-width: 0;
+        border-style: solid;
+        border-color: rgba(0,0,0,.3);
+        box-shadow: 0 0 6px rgba(0,0,0,.3);
+    }
+
+    #header .navs {
+        display: flex;
+        padding: 0 20px;
+        align-items: center;
+        box-sizing: border-box;
+        height: auto;
+        background: #fff;
+        box-shadow: 0 1px 6px rgba(0,0,0,0);
+        justify-content: space-between;
+    }
+    #header .navs1 {
+        width: 200px;
+        height: 100vh;
+        background: darkgoldenrod;
+        position: absolute;
+        top: 0;
+        display: block;
+        padding: 0;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    #header .navs.navs1::-webkit-scrollbar {
+        display: none;
+    }
+
+    #header .navs1 .list {
+        display: flex;
+        flex-direction: column;
+    }
+    #header .navs .title {
+        width: auto;
+        line-height: 70px;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 1);
+        padding: 0 20px;
+        margin: 0;
+        border-radius: 0 0 25px 25px ;
+        border-width: 0;
+        border-style: solid;
+        border-color: rgba(0,0,0,.3);
+        background-color: var(--publicMainColor);
+        box-shadow: 0 0 0px rgba(0,0,0,0);
+    }
+    #header .navs li {
+        display: inline-block;
+        width: auto;
+        line-height: 50px;
+        padding: 0 10px;
+        margin: 0 1px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+        border-radius: 25px 25px 0 0 ;
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgba(227, 227, 227, 1);
+        background-color: rgba(161, 161, 161, 1);
+        box-shadow: 0 0 0px rgba(0,0,0,.1);
+        text-align: center;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    #header .navs li a{
+        color: inherit;
+    }
+    #header .navs li.current a{
+        color: inherit;
+    }
+    #header .navs li a:hover{
+        color: inherit;
+    }
+    #header .navs li.current {
+        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+        border-radius: 25px 25px 0 0 ;
+        border-width: 10px;
+        border-style: solid;
+        border-color: var(--publicSubColor);
+        background-color: var(--publicMainColor);
+        box-shadow: 0 0 0px rgba(255,0,0,.8);
+    }
+    #header .navs li:hover {
+        color: #fff;
+        font-size: 18px;
+        border-radius: 25px 25px 0 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: var(--publicSubColor);
+        background-color: var(--publicMainColor);
+        box-shadow: 0 0 0px rgba(0,0,0,.3);
+    }
+/*结束==================================导航栏样式19=========================================结束*/
+
+/*layui下拉框边框颜色*/
+.layui-unselect{
+	border-color: var(--publicMainColor)
+}
+
+/*home页面数据样式 开始*/
+	/*home页面数据样式 普通数据样式 开始*/
+.b-link-stripe{
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	font-weight: 300;
+	overflow:hidden;
+	width: 100%;
+}
+.b-animate-go{
+	text-decoration:none;
+}
+.view {
+	width: 24%;
+	height: 35px;
+	margin: 3px;
+	float: left;
+	border:5px solid #F1F0F0;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	-webkit-box-shadow: 1px 1px 2px #e6e6e6;
+	-moz-box-shadow: 1px 1px 2px #e6e6e6;
+	box-shadow: 1px 1px 2px #e6e6e6;
+	cursor: default;
+	background: #fff;
+}
+.view .mask{
+	/*width: 267px;*/
+	/*height: 210px;*/
+
+	width: 100%;
+	height: 97%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+.view img {
+	display: block;
+	position: relative;
+}
+.view h4 {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	font-size: 17px;
+	padding: 10px;
+	background:rgba(33, 33, 33, 0.6);
+	margin: 7em 0;
+}
+.view a.info {
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	background: #000;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0 0 1px #000;
+	-moz-box-shadow: 0 0 1px #000;
+	box-shadow: 0 0 1px #000;
+}
+.view a.info:hover {
+	-webkit-box-shadow: 0 0 5px #000;
+	-moz-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+}
+.view-seventh img {
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.view-seventh .mask {
+	background-color:var(--publicMainColor,orange);
+	-webkit-transform: rotate(0deg) scale(1);
+	-moz-transform: rotate(0deg) scale(1);
+	-o-transform: rotate(0deg) scale(1);
+	-ms-transform: rotate(0deg) scale(1);
+	transform: rotate(0deg) scale(1);
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.view-seventh h4 {
+	-webkit-transform: translateY(-200px);
+	-moz-transform: translateY(-200px);
+	-o-transform: translateY(-200px);
+	-ms-transform: translateY(-200px);
+	transform: translateY(-200px);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.view-seventh a.info {
+	-webkit-transform: translateY(-200px);
+	-moz-transform: translateY(-200px);
+	-o-transform: translateY(-200px);
+	-ms-transform: translateY(-200px);
+	transform: translateY(-200px);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.view-seventh:hover img {
+	-webkit-transform: rotate(720deg) scale(0);
+	-moz-transform: rotate(720deg) scale(0);
+	-o-transform: rotate(720deg) scale(0);
+	-ms-transform: rotate(720deg) scale(0);
+	transform: rotate(720deg) scale(0);
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.view-seventh:hover .mask {
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-webkit-transform: translateY(0px) rotate(0deg);
+	-moz-transform: translateY(0px) rotate(0deg);
+	-o-transform: translateY(0px) rotate(0deg);
+	-ms-transform: translateY(0px) rotate(0deg);
+	transform: translateY(0px) rotate(0deg);
+	-webkit-transition-delay: 0.4s;
+	-moz-transition-delay: 0.4s;
+	-o-transition-delay: 0.4s;
+	-ms-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+.view-seventh:hover h4 {
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition-delay: 0.7s;
+	-moz-transition-delay: 0.7s;
+	-o-transition-delay: 0.7s;
+	-ms-transition-delay: 0.7s;
+	transition-delay: 0.7s;
+}
+.view-seventh:hover a.info {
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+	-ms-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+.main:nth-child(3) {
+	margin: 3em 0 0;
+}
+	/*home页面数据样式 普通数据样式 结束*/
+/*home页面数据样式 结束*/
+
+/*list页面数据样式 开始*/
+	/*list页面数据样式 普通数据样式 开始*/
+	/*list页面数据样式 普通数据样式 结束*/
+/*list页面数据样式 结束*/
+
+/*鼠标移入样式 开始*/
+.animation-box:hover {
+    transform: perspective(1000px) translate3d(0px, -10px, 0px) scale(1) rotate(0deg) skew(0deg, 0deg);
+    transition: all 0.3s;
+}/*鼠标移入样式 结束*/
+
+
+/* 主页 轮播图选择框颜色 主*/
+#test1 .layui-carousel-ind li.layui-this {
+	background-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 6px var(--publicMainColor, #808080);
+}
+/* 个人中心轮播图 */
+#swiper .layui-carousel-ind li.layui-this {
+	background-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 6px var(--publicMainColor, #808080);
+}
+
+/* 大部分颜色 主 */
+.main_color {
+	color: var(--publicMainColor, #808080);
+}
+/* 边框颜色 主 */
+.main_borderColor{
+	border-color: var(--publicMainColor, #808080);
+}
+/* 背景颜色 主 */
+.main_backgroundColor {
+	background-color: var(--publicMainColor, #808080);
+}
+/* 登录页面单选按钮颜色 主 */
+.l-redio .layui-form-radioed>i {
+	font-size: 16px;
+	color: var(--publicMainColor, #808080);
+}
+.l-redio .layui-form-radioed>div {
+	font-size: 14px;
+	color: var(--publicMainColor, #808080);
+}
+
+/* 大部分颜色 副 */
+.sub_color {
+	color: var(--publicSubColor, #808080);
+}
+/* 边框颜色 副 */
+.sub_borderColor{
+	border-color: var(--publicSubColor, #808080);
+	box-shadow: 0 0 6px var(--publicSubColor, #808080);
+}
+/* 背景颜色 副 */
+.sub_backgroundColor {
+	background-color: var(--publicSubColor, #808080);
+}
+
+/* 分页颜色 */
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+	background-color: var(--publicMainColor, #808080);
+}
+
+/* 评论和简介背景颜色 */
+.detail-tab .layui-tab-card>.layui-tab-title .layui-this {
+	background-color: var(--publicMainColor, #808080);
+	color: #fff;
+	font-size: 14px;
+}
+#swiper .layui-carousel-ind li.layui-this {
+	background-color: var(--publicMainColor, #808080);
+}
+
+/* 个人中心 菜单点击颜色*/
+.center-container .layui-nav-tree .layui-nav-item.layui-this {
+	background-color: var(--publicSubColor, #808080);
+}
+/*个人中心 菜单鼠标移上颜色*/
+.center-container .layui-nav-tree .layui-nav-item:hover {
+	background-color:var(--publicMainColor, #808080);
+}
+/*个人中心 菜单下线颜色*/
+.center-container .layui-nav-tree .layui-nav-item {
+	border-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 0px var(--publicMainColor, #808080);
+}
+/*个人中心 输入框中字体颜色和边框颜色*/
+.right-container .input .layui-input {
+	color: var(--publicMainColor, #808080);
+	border-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 0px var(--publicMainColor, #808080);
+}
+/*个人中心 下拉框中字体颜色和边框颜色*/
+.right-container .select .layui-input {
+	color: var(--publicMainColor, #808080);
+	border-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 0px var(--publicMainColor, #808080);
+}
+/*个人中心 未知颜色*/
+.right-container .date .layui-input {
+	border-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 0px var(--publicMainColor, #808080);
+}
+
+/* 前台elementUI得下拉框内容颜色和边框颜色修改 */
+/* start */
+.el-select-dropdown__item.selected {
+	color: var(--publicMainColor, #808080);
+	font-weight: bold;
+}
+.el-select .el-input.is-focus .el-input__inner {
+	border-color: var(--publicMainColor, #808080);
+}
+.el-input--suffix .el-input__inner{
+	color:var(--publicMainColor, #808080);
+	border-color: var(--publicMainColor, #808080);
+}
+.el-select .el-input__inner:focus {
+	border-color: var(--publicMainColor, #808080);
+}
+/* end */
+/*=====================富文本框字体样式===========================================================================*/
+
+.ql-size-small {
+	font-size: 10px;
+}
+.ql-size-large {
+	font-size: 18px;
+}
+.ql-size-huge {
+	font-size: 32px;
+}
